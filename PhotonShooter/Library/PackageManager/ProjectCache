@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637891848666785291
-    m_Hash: 129033415
+      ticks: 637891969607349387
+    m_Hash: 468148576
   m_LockFileStatus:
     m_FilePath: D:/Study/Unity Projects/PhotonShooter/PhotonShooter/PhotonShooter/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637891848667415814
-    m_Hash: 2289860381
+      ticks: 637891969607369391
+    m_Hash: 2796272650
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
