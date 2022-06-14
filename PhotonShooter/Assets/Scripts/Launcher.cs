@@ -11,12 +11,12 @@ public class Launcher : MonoBehaviourPunCallbacks
     public static Launcher Instance;
 
     [SerializeField] TMP_InputField roomNameInputField;
-    [SerializeField] TMP_Text errorText;
-    [SerializeField] TMP_Text roomNameText;
-    [SerializeField] Transform roomListContent;
-    [SerializeField] Transform playerListContent;
-    [SerializeField] GameObject roomListItemPrefab;
-    [SerializeField] GameObject playerListItemPrefab;
+    [SerializeField] TMP_Text       errorText;
+    [SerializeField] TMP_Text       roomNameText;
+    [SerializeField] Transform      roomListContent;
+    [SerializeField] Transform      playerListContent;
+    [SerializeField] GameObject     roomListItemPrefab;
+    [SerializeField] GameObject     playerListItemPrefab;
 
     private void Awake()
     {

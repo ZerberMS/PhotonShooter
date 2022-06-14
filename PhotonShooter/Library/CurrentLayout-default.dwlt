@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 144
+  controlID: 157
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 145
+  controlID: 135
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 146
+  controlID: 136
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,9 +475,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 58651300
-      m_LastClickedID: 1271128
-      m_ExpandedIDs: c85cfffff05cfffffa5cffff645fffff8c5fffff965fffff1062ffff3862ffff0a64ffff1268ffff3a68ffff0c6affffe46effff0c6fffff166fffff2c72ffff5472ffff2874ffff3a7cfffffe7cffff0086ffff2886fffffc87ffff3c8dffff648dffff388fffffbe9fffff56a8ffff7ea8ffff4eaaffffa2c1ffff5accffff62d0ffff68fbffff00480000901404004ca00800b4d008003ef8080086570b00
+      m_SelectedIDs: 7a060000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 68fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -716,22 +716,22 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: 68
   m_LastProjectPath: D:\Study\Unity Projects\PhotonShooter\PhotonShooter\PhotonShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 2}
-    m_SelectedIDs: 20ce0000
-    m_LastClickedID: 52768
-    m_ExpandedIDs: 0000000020ce000000ca9a3b
+    m_SelectedIDs: 48cf0000
+    m_LastClickedID: 53064
+    m_ExpandedIDs: 00000000f6ce000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -759,7 +759,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000020ce0000
+    m_ExpandedIDs: 00000000f6ce0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
