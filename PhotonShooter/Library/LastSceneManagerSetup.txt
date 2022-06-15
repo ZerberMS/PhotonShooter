@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Map 1/3D Free Modular Kit/Test_Map.unity
+- path: Assets/Scenes/Level.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
