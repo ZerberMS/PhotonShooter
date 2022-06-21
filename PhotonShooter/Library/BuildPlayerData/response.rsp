@@ -5,7 +5,6 @@
 -a="D:\Study\Unity Projects\PhotonShooter\PhotonShooter\PhotonShooter\Library\PlayerScriptAssemblies\Unity.ProBuilder.Stl.dll"
 -a="D:\Study\Unity Projects\PhotonShooter\PhotonShooter\PhotonShooter\Library\PlayerScriptAssemblies\UnityEngine.TestRunner.dll"
 -a="D:\Study\Unity Projects\PhotonShooter\PhotonShooter\PhotonShooter\Library\PlayerScriptAssemblies\Unity.Timeline.dll"
--a="D:\Study\Unity Projects\PhotonShooter\PhotonShooter\PhotonShooter\Library\PlayerScriptAssemblies\PhotonUnityNetworking.Demos.dll"
 -a="D:\Study\Unity Projects\PhotonShooter\PhotonShooter\PhotonShooter\Library\PlayerScriptAssemblies\Unity.TextMeshPro.dll"
 -a="D:\Study\Unity Projects\PhotonShooter\PhotonShooter\PhotonShooter\Library\PlayerScriptAssemblies\Unity.ProBuilder.Csg.dll"
 -a="D:\Study\Unity Projects\PhotonShooter\PhotonShooter\PhotonShooter\Library\PlayerScriptAssemblies\Unity.ProBuilder.dll"
