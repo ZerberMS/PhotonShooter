@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637891969607349387
-    m_Hash: 468148576
+      ticks: 637914308177107164
+    m_Hash: 129033415
   m_LockFileStatus:
     m_FilePath: D:/Study/Unity Projects/PhotonShooter/PhotonShooter/PhotonShooter/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637891969607369391
-    m_Hash: 2796272650
+      ticks: 637914308177445219
+    m_Hash: 2289860381
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -90,6 +90,7 @@ m_PackageAssets:
         - 1.15.16
         - 1.15.17
         - 1.15.18
+        - 1.17.0
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -110,6 +111,7 @@ m_PackageAssets:
         - 1.15.16
         - 1.15.17
         - 1.15.18
+        - 1.17.0
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -219,6 +221,7 @@ m_PackageAssets:
         - 3.0.12
         - 3.0.13
         - 3.0.14
+        - 3.0.15
         compatible:
         - 1.0.2
         - 1.0.6
@@ -250,6 +253,7 @@ m_PackageAssets:
         - 3.0.12
         - 3.0.13
         - 3.0.14
+        - 3.0.15
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -324,6 +328,7 @@ m_PackageAssets:
         - 2.0.12
         - 2.0.14
         - 2.0.15
+        - 2.0.16
         compatible:
         - 1.0.2
         - 1.0.3
@@ -343,7 +348,8 @@ m_PackageAssets:
         - 2.0.12
         - 2.0.14
         - 2.0.15
-        verified: 2.0.15
+        - 2.0.16
+        verified: 2.0.16
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
