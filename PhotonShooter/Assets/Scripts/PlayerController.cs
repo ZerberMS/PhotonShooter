@@ -3,10 +3,13 @@ using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class PlayerController : MonoBehaviourPunCallbacks, IDamagable
 {
+    [SerializeField] Image      healthbarImage;
+    [SerializeField] GameObject ui;
     [SerializeField] GameObject cameraHolder;
     [SerializeField] float      mouseSensitivity = 3, sprintSpeed, walkSpeed, jumpForce, smoothTime;
     [SerializeField] Item[]     items;
@@ -45,6 +48,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamagable
         {
             Destroy(GetComponentInChildren<Camera>().gameObject);
             Destroy(rb);
+            Destroy(ui);
         }
     }
 
@@ -184,6 +188,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamagable
 
         currentHealth -= damage;
 
+        healthbarImage.fillAmount = currentHealth / maxHealth;
         if (currentHealth <= 0)
         {
             Die();
