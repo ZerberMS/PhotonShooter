@@ -9,6 +9,18 @@ public class SingleShotGun : Gun
 
     PhotonView PV;
 
+    [SerializeField] AudioSource audioSource;
+
+    [SerializeField] ParticleSystem ps;
+
+    float counter;
+    [SerializeField] float timeToShoot = 1f;
+
+    private void Update()
+    {
+        counter += Time.deltaTime;
+    }
+
     private void Awake()
     {
         PV = GetComponent<PhotonView>();
@@ -16,7 +28,11 @@ public class SingleShotGun : Gun
 
     public override void Use()
     {
-        Shoot();
+        if (counter > timeToShoot)
+        {
+            Shoot();
+            counter = 0;
+        }
     }
 
     public void Shoot()
@@ -34,12 +50,19 @@ public class SingleShotGun : Gun
     [PunRPC]
     void RPC_Shoot(Vector3 hitPosition, Vector3 hitNormal)
     {
-        Collider[] colliders = Physics.OverlapSphere(hitPosition, 0.3f);
-        if (colliders.Length != 0)
+        if (PV.IsMine)
         {
-            GameObject bulletImpactObj = Instantiate(bulletImpactPrefab, hitPosition + hitNormal * 0.001f, Quaternion.LookRotation(hitNormal, Vector3.up) * bulletImpactPrefab.transform.rotation);
-            Destroy(bulletImpactObj, 10f);
-            bulletImpactObj.transform.SetParent(colliders[0].transform);
+            audioSource.Play();
+            ps.Play();
+
+            Collider[] colliders = Physics.OverlapSphere(hitPosition, 0.3f);
+            if (colliders.Length != 0)
+            {
+                GameObject bulletImpactObj = Instantiate(bulletImpactPrefab, hitPosition + hitNormal * 0.001f,
+                    Quaternion.LookRotation(hitNormal, Vector3.up) * bulletImpactPrefab.transform.rotation);
+                Destroy(bulletImpactObj, 10f);
+                bulletImpactObj.transform.SetParent(colliders[0].transform);
+            }
         }
     }
 
