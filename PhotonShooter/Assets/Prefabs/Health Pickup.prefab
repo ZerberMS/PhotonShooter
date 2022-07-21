@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 082a0adce1bcbe8429267c9e8beaeea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthRefreshTime: 3
+  healthRefreshTime: 15
   healAmount: 50
   fv: {fileID: 789214664942623887}
   audioSource: {fileID: 9181821154712355943, guid: e2a258c3082c3254d840cdeaaa508ded, type: 3}

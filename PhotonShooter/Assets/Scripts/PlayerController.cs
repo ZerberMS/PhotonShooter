@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamagable
 
     PlayerManager playerManager;
 
+
+    [SerializeField] Image hitIndicator;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -183,6 +186,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamagable
     void RPC_TakeDamage(float damage, PhotonMessageInfo info)
     {
         currentHealth -= damage;
+        hitIndicator.gameObject.SetActive(true);
+        Invoke("DeactivateHit", 0.4f);
 
         healthbarImage.fillAmount = currentHealth / maxHealth;
         if (currentHealth <= 0)
@@ -191,6 +196,11 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamagable
             PlayerManager.Find(info.Sender).GetKill();
 
         }
+    }
+
+    private void DeactivateHit()
+    {
+        hitIndicator.gameObject.SetActive(false);
     }
 
     public void Heal(float heal)
