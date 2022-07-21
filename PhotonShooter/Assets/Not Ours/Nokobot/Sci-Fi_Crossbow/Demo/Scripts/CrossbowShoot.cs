@@ -19,7 +19,7 @@ namespace Nokobot.Assets.Crossbow
         {
             if(Input.GetButtonDown("Fire1"))
             {
-                ps.Play();
+                ps.Play(true);
             }
         }
     }
