@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamagable
     {
         if (PV.IsMine)
         {
+            Cursor.lockState = CursorLockMode.Locked;
             EquipItem(0);
         }
         else
@@ -190,6 +191,20 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamagable
             PlayerManager.Find(info.Sender).GetKill();
 
         }
+    }
+
+    public void Heal(float heal)
+    {
+        if (currentHealth + heal <= maxHealth)
+        {
+        currentHealth += heal;
+        }
+        else
+        {
+            currentHealth = maxHealth;
+        }
+
+        healthbarImage.fillAmount = currentHealth / maxHealth;
     }
 
     void Die()
